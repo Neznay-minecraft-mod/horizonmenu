@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "horizonmenu",
+  "version": "${version}",
+  "name": "HorizonMenu",
+  "description": "HorizonUI-style main menu with biome backgrounds and a configurable button layout.",
+  "authors": ["Yulia"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.horizonmenu.HorizonMenuClient"]
+  },
+  "mixins": [
+    { "config": "horizonmenu.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
